@@ -9,44 +9,29 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="C:\Users\Administrator\Desktop\portfolio_build\bower_components\bootstrap\dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body> 
 
   <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-fixed-top">
+       <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Home</a>
+            <a class="navbar-brand" href="projects.html">Projects</a>
+            <a class="navbar-brand" href="contact.html">Contact</a>
         </div>
-      </nav>
+    </nav>
   <!--/NAVBAR-->
 
 <!--HOME JUMBOTRON-->
   <div class="container-fluid text-center">
     <div class="jumbotron">
       <div class="row">
-        <div class="col-md-12 col-md-offset-1">
+        <div class="col-md-12">
           <h1>Hello, my name is Blake Gotting</h1>
           <p class="lead">I'm a full stack developer.</p>
         </div>
@@ -61,14 +46,9 @@
       <div class="col-md-12">
 
         <ul class="nav nav-pills portfolio-filter">
-          <li class="portfolio-title">Filter by:</li>
-          <li role="presentation" class="active"><a href="#" data-filter="*">All</a></li>
           <li role="presentation"><a href="#" data-filter=".project1">Project 1</a></li>
           <li role="presentation"><a href="#" data-filter=".project2">Project 2</a></li>
           <li role="presentation"><a href="#" data-filter=".project3">Project 3</a></li>
-
-
-
 
           <div class="row portfolio-items">
             <figure class="portfolio-item col-sm-4 project1">
@@ -90,31 +70,32 @@
         <!--/PROJECT GRID-->
 
         <!--CONTACT FOOTER-->
-          <img id="night-sky" src=".\img\night_sky.png" alt="night sky">
+
+        <div class="container-footer">
+            <img id="night-sky" src=".\img\night_sky.png" alt="night sky">
+            <div class="centered">
+              <div class="glyph-container">
+                <p>
+                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span><br>503-250-1130
+                  </p>
+                  <p>
+                      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>brgotting@gmail.com
+                  </p>
+                </div>
+            </div>
+          </div>       
         <!--/CONTACT FOOTER-->
 
-
-
-
-
-
-
-
-        
           <script src="js/vendor/modernizr-3.6.0.min.js"></script>
           <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
           <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-          <script>C: \Users\Administrator\Desktop\portfolio_build\bower_components\isotope - layout\dist\isotope.pkgd.min.js</script>
+          <script> src="C:\Users\Administrator\Desktop\portfolio_build\bower_components\isotope-layout\dist\isotope.pkgd.min.js"</script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
           <script src="js/plugins.js"></script>
           <script src="js/main.js"></script>
 
-          <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-          <script>
-            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-            ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-          </script>
-          <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        
 </body>
 
 </html>
