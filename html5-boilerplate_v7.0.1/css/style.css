@@ -99,15 +99,13 @@ p {
 margin-top: 100px;
 }
 
-.portfolio-item img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    border-radius: 4px;
-}
+.portfolio-item {
+    opacity: .6;
 
-.portfolio-item:hover img {
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
+}
+.portfolio-item:hover {
+    opacity: 1;
+    
 }
 
 .container-footer {
